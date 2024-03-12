@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 type DemoProps = {
   firstName: string;
@@ -7,6 +7,8 @@ type DemoProps = {
 export default function Demo({ firstName }: DemoProps) {
   const [count, setCount] = useState<number>(0);
   firstName;
+
+  const input = useRef(null);
 
   function handleCount(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     console.log(e);
@@ -57,6 +59,7 @@ export default function Demo({ firstName }: DemoProps) {
           }}
         >
           <input
+            ref={input}
             type="text"
             onChange={(e) => {
               handleChange(e);
