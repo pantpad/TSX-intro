@@ -31,8 +31,8 @@ export default function Demo({ firstName }: DemoProps) {
   function fetchUsers(
     userId: number,
     fetchOptions: { staleTime: number | undefined }
-  ) {
-    return userId;
+  ): { id: userId } {
+    return { id: userId };
   }
 
   return (
