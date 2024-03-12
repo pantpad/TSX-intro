@@ -28,6 +28,13 @@ export default function Demo({ firstName }: DemoProps) {
     console.log(e.target);
   }
 
+  function fetchUsers(
+    userId: number,
+    fetchOptions: { staleTime: number | undefined }
+  ) {
+    return userId;
+  }
+
   return (
     <>
       <p>{count}</p>
