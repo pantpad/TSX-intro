@@ -18,6 +18,11 @@ export default function Demo({ firstName }: DemoProps) {
     <>
       <p>{count}</p>
       <button onClick={handleClick}>Click</button>
+      <section>
+        <form onSubmit={(e) => {}}></form>
+        <input type="text" onChange={(e) => {}} />
+        <button onClick={(e) => {}}>Button</button>
+      </section>
     </>
   );
 }
