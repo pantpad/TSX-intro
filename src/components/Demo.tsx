@@ -2,7 +2,7 @@ type DemoProps = {
   firstName: string;
 };
 
-export default function Demo(props: DemoProps) {
-  props.firstName;
+export default function Demo({ firstName }: DemoProps) {
+  firstName;
   return <></>;
 }
