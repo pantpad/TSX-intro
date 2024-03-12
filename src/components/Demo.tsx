@@ -8,7 +8,7 @@ export default function Demo({ firstName }: DemoProps) {
   const [count, setCount] = useState<number>(0);
   firstName;
 
-  const input = useRef(null);
+  const input = useRef<HTMLInputElement>(null);
 
   function handleCount(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     console.log(e);
@@ -40,6 +40,7 @@ export default function Demo({ firstName }: DemoProps) {
   useEffect(() => {
     const user = fetchUsers(1, { staleTime: 1000 });
     console.log(user);
+    input.current?.focus();
   }, []);
 
   return (
