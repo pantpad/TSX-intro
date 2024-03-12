@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type DemoProps = {
   firstName: string;
@@ -31,9 +31,14 @@ export default function Demo({ firstName }: DemoProps) {
   function fetchUsers(
     userId: number,
     fetchOptions: { staleTime: number | undefined }
-  ): { id: userId } {
-    return { id: userId };
+  ): { id: number } {
+    return { id: userId, ...fetchOptions };
   }
+
+  useEffect(() => {
+    const user = fetchUsers(1, { staleTime: 1000 });
+    console.log(user);
+  }, []);
 
   return (
     <>
