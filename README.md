@@ -1,32 +1,29 @@
 # TypeScript - Converting JSX to TSX at COMPONENT Level
 
-# React + TypeScript + Vite
+## #1 PROPS in TSX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Any components can receive props.
 
-Currently, two official plugins are available:
+PROPS needs to be TYPED.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+How to type props in react component?
 
-## Expanding the ESLint configuration
+- Create TYPE for the component props and define your props there.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+//convention for naming the type: componentName+Props -> DemoProps
 
-- Configure the top-level `parserOptions` property like this:
+With this → props of the component will be properly typed.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+We get automatic type inference + autocomplete in vscode!
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+It’s better to destructure props → directly inside the function arguments and assign the type to all of the destructured props.
+
+## #2 STATE in TSX
+
+## #3 EVENTS in TSX
+
+## #4 - FUNCTIONS in TSX
+
+## #5 - HOW to TYPE a REF in TSX
+
+## #6 - HOW to TYPE CUSTOM HOOKS in TSX.
