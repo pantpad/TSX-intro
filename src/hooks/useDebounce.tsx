@@ -13,5 +13,5 @@ export default function useDebounce(value: number, delay: number) {
     };
   }, [value, delay]);
 
-  return debouncedValue;
+  return [debouncedValue, setDebouncedValue] as const;
 }
