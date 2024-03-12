@@ -1,8 +1,23 @@
+import { useState } from "react";
+
 type DemoProps = {
   firstName: string;
 };
 
 export default function Demo({ firstName }: DemoProps) {
+  const [count, setCount] = useState<number>(0);
   firstName;
-  return <></>;
+
+  function handleClick() {
+    setCount(() => {
+      return Math.floor(Math.random() * 100);
+    });
+  }
+
+  return (
+    <>
+      <p>{count}</p>
+      <button onClick={handleClick}>Click</button>
+    </>
+  );
 }
