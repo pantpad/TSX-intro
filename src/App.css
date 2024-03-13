@@ -6,11 +6,16 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  display: block;
+  margin: 0 auto;
+  max-height: 5em;
+  max-width: 5em;
   will-change: filter;
   transition: filter 300ms;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.2em;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

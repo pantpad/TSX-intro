@@ -8,7 +8,7 @@ type DemoProps = {
 export default function Demo({ firstName }: DemoProps) {
   firstName;
   const [count, setCount] = useState<number>(0);
-  const [debounceCount, setDebounceCount] = useDebounce(count, 1000);
+  const [debounceCount] = useDebounce(count, 1000);
   const input = useRef<HTMLInputElement>(null);
 
   function handleCount(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
@@ -57,6 +57,7 @@ export default function Demo({ firstName }: DemoProps) {
       </button>
       <section>
         <form
+          className="form"
           onSubmit={(e) => {
             handleSubmit(e);
           }}
