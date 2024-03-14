@@ -41,7 +41,6 @@ export default function Demo({ firstName }: DemoProps) {
   useEffect(() => {
     const user = fetchUsers(1, { staleTime: 1000 });
     console.log(user);
-    input.current?.focus();
     console.log(debounceCount);
   }, [debounceCount]);
 

@@ -1,0 +1,21 @@
+header {
+  text-align: center;
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+.fade-up {
+  animation-name: fade-up;
+  animation-duration: 1000ms;
+  animation-delay: 100ms;
+  animation-timing-function: ease;
+}
