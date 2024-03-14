@@ -11,6 +11,19 @@ header {
 
 img {
   display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+img:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+img:hover {
+  filter: drop-shadow(0 0 0.2em #586265aa);
 }
 
 .fade-up {
@@ -18,4 +31,7 @@ img {
   animation-duration: 1000ms;
   animation-delay: 100ms;
   animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
 }
