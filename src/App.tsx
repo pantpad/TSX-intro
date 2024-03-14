@@ -12,7 +12,7 @@ function App() {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 1,
+      threshold: 0.7,
     };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -28,8 +28,6 @@ function App() {
   return (
     <>
       <Header />
-      <SectionGrid />
-      <SectionGrid />
       <SectionGrid />
       <Demo firstName="firstName" />
     </>

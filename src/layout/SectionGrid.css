@@ -1,5 +1,45 @@
 .section-container {
-  min-height: 80vh;
-  border: 1px solid black;
+  min-height: 70vh;
   padding: 2em;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  width: min(80rem, 100vw - 2rem);
+  margin: 0 auto;
+  font-size: 2rem;
+  justify-items: center;
+  align-items: start;
+}
+
+.section-first-item {
+  text-shadow: var(--text-shadow-md);
+}
+
+.section-second-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-second-item svg {
+  width: 15rem;
+  height: 15rem;
+  will-change: filter;
+  transition: filter 300ms;
+  animation: spin 20s linear infinite;
+}
+
+.section-second-item svg {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.section-second-item:hover svg {
+  filter: drop-shadow(0 0 0.2em #586265aa);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

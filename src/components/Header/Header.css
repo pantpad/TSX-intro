@@ -9,6 +9,10 @@ header {
   position: relative;
 }
 
+h1 {
+  text-shadow: var(--text-shadow-md);
+}
+
 img {
   display: block;
   width: 300px;

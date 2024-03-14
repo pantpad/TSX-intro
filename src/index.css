@@ -12,6 +12,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --text-shadow-md: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -27,11 +29,14 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--ts-bg-color);
+  color: white;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-wrap: balance;
 }
 
 button {
@@ -51,19 +56,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: white;
-    background-color: var(--ts-bg-color);
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 @keyframes fade-up {
