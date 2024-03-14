@@ -1,0 +1,13 @@
+.to-fade {
+  opacity: 0;
+}
+
+.fade-up {
+  animation-name: fade-up;
+  animation-duration: 1000ms;
+  animation-delay: 50ms;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
