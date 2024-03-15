@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
+  background-color: #007bcd;
   --ts-bg-color: #007bcd;
 
   font-synthesis: none;
@@ -67,4 +68,27 @@ button:focus-visible {
     opacity: 1;
     transform: translate3d(0, 0%, 0);
   }
+}
+
+.intro-grid {
+  min-height: 70vh;
+  grid-template-columns: 5fr 3fr;
+  padding: 2em;
+  display: grid;
+  width: min(80rem, 100vw - 2rem);
+  margin: 0 auto;
+  font-size: 2rem;
+  justify-items: center;
+  align-items: start;
+}
+
+.props-grid {
+  min-height: 70vh;
+  grid-template-columns: 5fr 3fr;
+  padding: 2em;
+  display: grid;
+  width: min(80rem, 100vw - 2rem);
+  margin: 0 auto;
+  font-size: 2rem;
+  align-items: start;
 }

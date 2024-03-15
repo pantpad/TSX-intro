@@ -1,6 +1,8 @@
 import "./App.css";
-import Demo from "./components/Demo";
+// import Demo from "./components/Demo";
 import Header from "./components/Header/Header";
+import IntroSection from "./components/Sections/IntroSection";
+import PropsSection from "./components/Sections/PropsSection";
 import SectionGrid from "./layout/SectionGrid";
 
 import { useEffect } from "react";
@@ -28,8 +30,13 @@ function App() {
   return (
     <>
       <Header />
-      <SectionGrid />
-      <Demo firstName="firstName" />
+      <SectionGrid className="intro-grid">
+        <IntroSection />
+      </SectionGrid>
+      <SectionGrid className="props-grid">
+        <PropsSection />
+      </SectionGrid>
+      {/* <Demo firstName="firstName" /> */}
     </>
   );
 }

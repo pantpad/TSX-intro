@@ -1,26 +1,14 @@
-.section-container {
-  min-height: 70vh;
-  padding: 2em;
-  display: grid;
-  grid-template-columns: 5fr 3fr;
-  width: min(80rem, 100vw - 2rem);
-  margin: 0 auto;
-  font-size: 2rem;
-  justify-items: center;
-  align-items: start;
-}
-
-.section-first-item {
+.section-intro-first-item {
   text-shadow: var(--text-shadow-md);
 }
 
-.section-second-item {
+.section-intro-second-item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section-second-item svg {
+.section-intro-second-item svg {
   width: 15rem;
   height: 15rem;
   will-change: filter;
@@ -28,10 +16,10 @@
   animation: spin 20s linear infinite;
 }
 
-.section-second-item svg {
+.section-intro-second-item svg {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.section-second-item:hover svg {
+.section-intro-second-item:hover svg {
   filter: drop-shadow(0 0 0.2em #586265aa);
 }
 
