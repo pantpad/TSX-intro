@@ -34,14 +34,14 @@ export default function PropsSection() {
           <img src={Typed} alt="how_to_type" />
         </div>
       </FadeUpWrapper>
-      <FadeUpWrapper delay="1000ms">
-        <div style={{ marginTop: "4em" }} className="prop-section-first-item">
+      <FadeUpWrapper delay="2000ms">
+        <div style={{ marginTop: "2em" }} className="prop-section-first-item">
           <p className="prop-title">
             Then simply apply the type after the props declaration
           </p>
         </div>
       </FadeUpWrapper>
-      <FadeUpWrapper delay="1000ms">
+      <FadeUpWrapper delay="2000ms">
         <div className="prop-section-second-item">
           <p className="prop-title-hidden">
             How to type props in react component?
